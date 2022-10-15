@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class add{
+	public:
+		int a,b,c;
+		void getdata(){
+		
+		cout<<"enter a:";
+		cin>>a;
+		cout<<"enter b:";
+		cin>>b;
+		c=a+b;
+		cout<<"sum of two numbers:"<<a+b<<endl;
+	}
+};
+class product:public add{
+	public:
+		void getdata1(){
+			cout<<"product of two numbers:"<<a*b<<endl;
+		}
+};
+int main(){
+	product w;
+	w.getdata();
+	w.getdata1();
+	return 0;
+	
+}
